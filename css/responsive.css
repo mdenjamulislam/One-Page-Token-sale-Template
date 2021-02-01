@@ -1,0 +1,149 @@
+/*----------------------------------------------------------------------|
+    Template name: Enjam Template
+    Author: MD Enjamul Islam
+    Author URL: mdenjamulislam527@gmail.com
+    Versions: 1.0.0
+|-----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+    Default Layout: 1140px;
+    Gutter: 15px;
+    Outer margins: 0px.
+----------------------------------------------------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1080px) {
+    /*-- navbar --*/
+    #header {
+        padding: 20px 40px;
+    }
+    .navbar ul .nav-item .nav-link {
+        font-size: 14px;
+    }
+}
+
+/*----------------------------------------------------------------------
+    Tablet Layout: 1140px;
+    Gutter: 15px;
+    Outer margins: 0px.
+    Inherits styles form: Default Layout.
+----------------------------------------------------------------------*/
+@media only screen and (max-width: 991px) {
+    /*--- navbar responsive --*/
+    #header {
+        padding: 10px 20px;
+    }
+    #header .navbar ul {
+        background: #2B2B2B;
+    }
+    #header.fixed .navbar ul {
+        background: #2B2B2B;
+    }
+    .navbar ul .nav-item .nav-link.active::before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #F9B707;
+        border-radius: 50%;
+        left: 48%;
+        top: 40px;
+        display: none;
+    }
+    #header .navbar ul .nav-item {
+        width: 100%;
+        padding: 0 20px;
+    }
+    #header .navbar ul .nav-item:hover {
+        background-color: #F9B707;
+    }
+    #header .navbar ul .nav-item .nav-link:hover {
+        color: #fff;
+        margin: 0 20px;
+    }
+    /*-- social icon --*/
+    .social-icon {
+        margin-left: 35%;
+    }
+
+    /* Timeline start */
+
+    .timeline:before {
+		left: 3%;
+	}
+	.timeline .icon {
+		left: .3%;
+	}
+	.timeline ul li {
+		width: 90%;
+		padding: 3%;
+	}
+	.timeline ul li:nth-child(odd) {
+		float: right;
+		text-align: center;
+		left: -3%;
+	}
+	.timeline ul li:nth-child(even) {
+		float: right;
+		text-align: center;
+		left: -3%;
+	}
+	.timeline ul li:nth-child(odd):before,
+	.timeline ul li:nth-child(even):before {
+		left: -5.5%;
+		right: 0;
+	}
+	.timeline ul li .timeline_cont {
+		padding: 2%;
+	}
+	.timeline ul li .date {
+		margin-top: 20px;
+	}
+	.timeline ul li .date h4 {
+		padding: 1%;
+	}
+	.timeline ul li:nth-child(odd) .date {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.timeline ul li:nth-child(even) .date {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+   
+}
+
+@media only screen and (max-width: 767px) {
+    /*-- navbar --*/
+
+
+    /*-- home-banner --*/
+    #home-banner {
+        padding-top: 120px;
+    }
+
+    /*-- faq --*/
+    #accordionEx .card a {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

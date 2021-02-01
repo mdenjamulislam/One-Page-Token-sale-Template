@@ -1,0 +1,769 @@
+/*----------------------------------------------------------------------|
+    Template name: Enjam Template
+    Author: MD Enjamul Islam
+    Author URL: mdenjamulislam527@gmail.com
+    Versions: 1.0.0
+
+    Basic color: #
+    Text-color: #fff;
+    Background color: #16181D;
+|-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------|
+    [ Table of collum ]
+    
+    1. Google font
+    2. BODY / COMMON CSS
+    3. HEADER 
+        3.1 LOGO
+        1.2. NAVBAR
+    4. Home banner
+    5. ABOUT 
+        5.1. .about-wrap
+        5.2. AIM
+    6. Section-title
+    7. Trading Platform
+    8. Product 
+    9.Token
+        9.1 token-details
+        9.2. token price
+    10. Timeline
+    11. FAQ
+    12. Contact form
+
+
+
+
+|-----------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------|
+    1. GOOGLE FONT
+|-----------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,200,300,400,700,800,900');
+
+
+/*-----------------------------------------------------------------------|
+    2. BODY / COMMON CSS
+|-----------------------------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: comfortaa,cursive;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    line-height: 26px;
+    overflow-x: hidden;
+    color: #fff;
+    background: rgb(22, 24, 28);
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.button {
+    padding: 10px 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #444;
+    background: #fff;
+    border-radius: 90px;
+    font-size: 18px;
+    outline: 0;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.button:hover {
+    background-color: #F9B707;
+    color: #fff;
+}
+
+
+/*-----------------------------------------------------------------------|
+    3. HEADER
+|-----------------------------------------------------------------------*/
+
+#header {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px 80px;
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+    -ms-transition: all 250ms ease-in-out 0s;
+    -o-transition: all 250ms ease-in-out 0s;
+    transition: all 250ms ease-in-out 0s;
+}
+#header.fixed {
+    position: fixed;
+    background-color: #131519;
+    padding: 10px 30px;
+    box-shadow: 0 0 30px 0 rgba(255,255,255,.1);
+}
+.header {}
+.navbar {}
+.bg-light {
+    background-color: #131519 !important;
+}
+.navbar img.logo {
+    max-width: 100%;
+    height: 100px;
+}
+.navbar ul {}
+.navbar ul .nav-item {}
+.navbar ul .nav-item .nav-link {
+    font-size: 16px;
+    color: #fff;
+    line-height: normal;
+    position: relative;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.navbar ul .nav-item .nav-link.active {
+    color: #F9B707;
+    position: relative;
+}
+.navbar ul .nav-item .nav-link.active::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #F9B707;
+    border-radius: 50%;
+    left: 48%;
+    top: 40px;
+}
+.navbar ul .nav-item .nav-link:hover {
+    color: #F9B707;
+    
+}
+
+
+
+/*-----------------------------------------------------------------------|
+    4. HOME banner 
+|-----------------------------------------------------------------------*/
+
+#home-banner {
+    position: relative;
+    padding: 15% 0px 6%;
+}
+#home-banner::before {
+    position: absolute;
+    top: -15%;
+    left: 0%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../images/bg/bg1.png);
+}
+.banner-content {
+    text-align: left !important;
+}
+.banner-content h2.banner-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.banner-content h2.banner-title span {
+    color: #F9B707;
+    font-weight: 600;
+}
+.banner-content p.banner-text {}
+.banner-content a.button {
+    padding: 10px 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #444;
+    background: #fff;
+    border-radius: 90px;
+    font-size: 18px;
+    outline: 0;
+    display: inline-block;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.banner-content a.button:hover {
+    background-color: #F9B707;
+    color: #fff;
+}
+/*-- banner content end --*/
+
+.iq-content {
+    display: table;
+    background-color: #131519;
+    border-radius: 20px;
+}
+.iq-contenr-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 40px;
+}
+.iq-contenr-wrap > h3.iq-title{
+    font-weight: 800;
+    color: #F9B707;
+    font-size: 36px;
+    
+}
+.iq-contenr-wrap > h2 {
+    color: #fff;
+    margin: 40px 0;
+}
+
+
+/*-----------------------------------------------------------------------|
+    5. About
+|-----------------------------------------------------------------------*/
+
+#about {}
+.about {
+    padding: 100px 0 0;
+}
+.about-wrap {}
+.about-content {
+    text-align: left !important;
+}
+.about-content .about-title {}
+.about-content .about-title > small {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: montserrat, sans-serif;
+    letter-spacing: 4px;
+
+}
+.about-content .about-title > h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.about-content > p {
+    margin-bottom: 20px;
+}
+.about-content > a.button {
+    background-color: #F9B707;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+}
+.about-content > a.button:hover {
+    background-color: #fff;
+    color: #131519;
+}
+
+.about-image {}
+.about-image > img {}
+/*-- end about-us --*/
+
+#aim {
+    padding: 100px 0;
+}
+
+/*-----------------------------------------------------------------------|
+    6. Section-title
+|-----------------------------------------------------------------------*/
+
+.section-title {
+    margin: 0 0 60px;
+}
+.section-title .title-heading {}
+.section-title .title-heading > small {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: montserrat,sans-serif;
+    letter-spacing: 4px;
+}
+.section-title .title-heading > h2.title {
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+}
+.section-title p.title-cont {
+    padding: 0 10%;
+}
+
+/*-----------------------------------------------------------------------|
+    7. Trading Platform
+|------------------------------------------------------------------------*/
+
+#trading-platform {}
+
+nav#platform-tab {}
+nav#platform-tab a.nav-link {
+    width: 20%;
+    text-align: center;
+    padding: 15px 20px;
+    color: #fff;
+    position: relative;
+    background-color: #101114;
+}
+nav#platform-tab a.nav-link:first-child {
+    border-radius: 20px 0 0 0;
+}
+nav#platform-tab a.nav-link:last-child {
+    border-radius: 0 20px 0 0;
+}
+nav#platform-tab a.nav-link i {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 8px;
+}
+nav#platform-tab a.nav-link span {
+    font-size: 16px;
+}
+nav#platform-tab .nav-item.show .nav-link,
+nav#platform-tab .nav-link.active, 
+nav#platform-tab .nav-link:hover, 
+nav#platform-tab .nav-link:focus {
+    color: #F9B707;
+    background: #131519;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-bottom: 2px solid #F9B707;
+}
+/*-- nav tab end --*/
+.trading-wrap {
+    background-color: #131519;
+    border-radius: 20px;
+}
+.tab-content {}
+.tab-content .tab-pane {
+    padding: 15px;
+}
+.tab-content .tab-pane ul  {}
+.tab-content .tab-pane ul li i {
+    font-weight: 500;
+    font-size: normal;
+}
+.tab-content .tab-pane ul li a {
+    color: #F9B707;
+}
+
+/*-----------------------------------------------------------------------|
+    7. Trading Platform
+|------------------------------------------------------------------------*/
+
+#product {
+    padding: 100px 0;
+}
+
+.product-item-wrap {
+    position: relative;
+    margin-top: 100px;
+}
+
+.product-wrap {
+    padding: 0 20px 20px;
+    margin-bottom: 120px;
+    background-color: #181A21;
+    position: relative;
+    text-align: center;
+}
+.product-wrap .product-icon {}
+.product-wrap .product-icon > img {
+    margin-top: -80px;
+    width: 60%;
+}
+.product-wrap .product-content {}
+.product-wrap .product-content> h5.product-title {
+    font-family: comfortaa,cursive;
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+}
+.product-wrap .product-content> p.product-text {
+    margin-bottom: 10px;
+}
+
+/*-----------------------------------------------------------------------|
+    9. Token
+|------------------------------------------------------------------------*/
+
+#token {
+    background-color: #131519;
+}
+.token-details, .token-price {
+    padding: 100px 0;
+}
+#token table td {
+    border: 1px solid #292c34;
+}
+
+/*-----------------------------------------------------------------------|
+    10. Timeline
+|------------------------------------------------------------------------*/
+#road {
+    padding-top: 100px;
+}
+.timeline-wrap {
+    padding: 100px 0 150px 0;
+}
+
+.timeline_wrap {
+    position: relative;
+}
+.timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.timeline .icon {
+    position: absolute;
+    font-size: larger;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #F9B707;
+    border-radius: 50%;
+    left: 48.5%;
+    top: -30px;
+    background-color: #F9B707;
+}
+.timeline .icon i {
+    font-size: 20px;
+    font-weight: 500;
+    color: #04b692;
+    margin-top: 5px;
+}
+.timeline:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90%;
+    background: #292C34;
+    left: 50%;
+}
+.timeline ul {
+    padding-top: 50px;
+    padding-left: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.timeline ul li {
+    position: relative;
+    padding: 30px 40px;
+    list-style: none;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+.timeline ul li:nth-child(odd) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.timeline ul li:nth-child(even) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.timeline ul li:nth-child(odd):before, .timeline ul li:nth-child(even):before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F9B707;
+    border-radius: 50%;
+    background-color: #F9B707;
+}
+.timeline ul li:nth-child(odd):before {
+    left: -8px;
+}
+.timeline ul li:nth-child(even):before {
+    right: -12px;
+}
+
+
+
+
+.timeline ul li .timeline_cont {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #131418;
+    transition: .3s;
+}
+.timeline ul li .timeline_cont h3 {}
+.timeline ul li .timeline_cont p {
+    padding: 20px 10px;
+}
+
+.timeline ul li .date {}
+.timeline ul li .date > h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.timeline ul li:nth-child(odd) .date {
+    position: absolute; 
+    top: 24px;
+    left: -180px;
+}
+.timeline ul li:nth-child(even) .date {
+    position: absolute;
+    top: 24px;
+    right: -180px;
+}
+
+
+
+/*-----------------------------------------------------------------------|
+    11. FAQ
+|------------------------------------------------------------------------*/
+
+#faq {
+    padding: 100px 0;
+}
+#accordionEx {
+    background: none;
+}
+#accordionEx .card {
+    background: none;
+}
+#accordionEx .card a {
+    font-size: 18px;
+    display: block;
+    background-color: #222428;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+#accordionEx .card a span {
+    align-self: center;
+}
+#accordionEx .card a i {
+    float: right;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #F9B707;
+    text-align: center;
+    margin-top: -3px;
+}
+
+
+/*-----------------------------------------------------------------------|
+    12. Contact form
+|------------------------------------------------------------------------*/
+
+#contact {
+    padding: 80px 0;
+}
+.contact-form-wrap {
+    background-color: #131519;
+    padding: 15px;
+    border-radius: 20px;
+}
+.contact-form-heading {}
+.contact-form-heading > small {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: montserrat,sans-serif;
+    letter-spacing: 4px;
+}
+.contact-form-heading > h2.title {
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+}
+
+#contact-form {}
+#contact-form .form-group {}
+#contact-form .form-control {
+    background-color: #202228;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+}
+#contact-form .form-control:focus,
+#contact-form .form-control:active {
+    background-color: #F9B707;
+    border: none;
+    outline: 0;
+}
+#contact-form textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+#contact-form > button.button {
+    width: 200px;
+    margin-left: 30%;
+    background-color: #F9B707;
+    color: #fff;
+    border: none;
+    outline: 0;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+#contact-form > button.button:hover {
+    background-color: #fff;
+    color: #292c34;
+}
+
+/*-- Contact form end -*/
+
+.social-icon {}
+.social-icon ul {}
+.social-icon ul li {
+    float: left;
+    margin-right: 10px;
+}
+.social-icon ul li a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    display: table;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.social-icon ul li a:hover {
+    background-color: #F9B707;
+}
+.social-icon ul li i {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*-----------------------------------------------------------------------|
+    13. Footer
+|------------------------------------------------------------------------*/
+
+#footer {
+    background-color: rgba(0, 0, 0, .3);
+}
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+}
+.copyright > p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.copyright a {
+    color: #F9B707;
+}
+
+
+/*-----------------------------------------------------------------------|
+    14. ScrollToTop Arrow
+|------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1023px) {
+  #scrolltotop_parent {
+    bottom: 25px !important;
+    right: 25px !important;
+  }
+}
+
+#scrolltotop_parent {
+  background: #131519;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1002 !important;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#scrolltotop_parent:hover {
+  background-color: #F9B707;
+}
+
+.scrolltotop_circle {
+  border-radius: 50%;
+}
+
+.scrolltotop_round_corners {
+  border-radius: 5px;
+}
+
+#scrolltotop_arrow {
+    text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#scrolltotop_arrow i {
+    font-size: 28px;
+    color: #fff;
+}
+
+#scrolltotop_arrow:focus {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+.scrolltotop_hide_onload {
+  display: none;
+}
